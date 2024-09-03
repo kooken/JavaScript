@@ -1,0 +1,23 @@
+<!-- Write a program for a vending machine. The customer enters their name and age and gets a drink.
+If the customer is under 21, the line “Take a glass of juice” is displayed; if the customer is 21
+or older, the line “I can offer you a glass of wine” is displayed; if over 80, the line “Maybe some
+tea?” is displayed. -->
+<body>
+<script>
+const userName = prompt("What's your name?");
+console.log(`Hello, ${userName}!`);
+const userAge = Number(prompt("What's your age?"));
+if (userAge < 21){
+	console.log("We can offer you a glass of juice!");
+}
+else if (userAge >= 21 && userAge < 80){
+	console.log("We can offer you a glass of wine!");
+}
+else if (userAge >= 80){
+	console.log("We can offer you a cup of tea!");
+}
+else{
+	console.log("We can offer you sweet nothing!");
+}
+</script>
+</body>

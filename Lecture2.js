@@ -117,3 +117,19 @@ else if (herHeight == hisHeight){ // if have one more condition: else if (anothe
 else { // else {what to do if our condition is false}
 	console.log("She is higher than him")
 }
+
+// prompt() method
+
+/* I will comment everything here because prompt isn't supported by Node.js
+const userAge = Number(prompt("What's your age?"));
+ OR
+const userAge = +prompt("What's your age?");
+
+const userAge = Number(prompt("What's your age?", 21)); 21 stands for default hint value
+
+Because by default promt() method returns a string, so we need to convert the string into number
+to do some operations or conditional statements.
+*/
+
+
+
