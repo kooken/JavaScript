@@ -51,31 +51,31 @@ let totalDistance = 0;
 let answer = 0;
 if ((totalDistance += snailCrawlsUp) < wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
-	console.log("Go forward!")
+	console.log("Go forward!");
 }
 else if (totalDistance == wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
-	console.log("Finish! Yay!")
+	console.log("Finish! Yay!");
 }
 totalDistance -= snailSlidesDown
 if ((totalDistance += snailCrawlsUp) < wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
-	console.log("Go forward!")
+	console.log("Go forward!");
 }
 else if (totalDistance == wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
-	console.log("Finish! Yay!")
+	console.log("Finish! Yay!");
 }
 totalDistance -= snailSlidesDown
 if ((totalDistance += snailCrawlsUp) < wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
-	console.log("Go forward!")
+	console.log("Go forward!");
 }
 else if (totalDistance == wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
-	console.log("Finish! Yay!")
+	console.log("Finish! Yay!");
 }
-totalDistance -= snailSlidesDown
+totalDistance -= snailSlidesDown;
 
 /*
 Task 4
@@ -126,6 +126,7 @@ Body Mass Index
 
 const userHeight = 1.80; // OR we can use prompt() const userHeight = Number(prompt("What's your height? (in meters)"))
 const userWeight = 87; // OR we can use prompt() const userWeight = Number(prompt("What's your weight? (in kg)"))
+
 const BMI = userWeight / (userHeight * userHeight);
 if (BMI <= 18.5){
 	console.log("I didn’t eat enough porridge");
@@ -156,17 +157,17 @@ for pensioners over 65 years old - 60% of the cost.
 const passengerAge = 0; // OR we can use prompt() const passengerAge = Number(prompt("What's your age?"))
 let ticketPrice = 3; // ticket price in Helsinki OR we can use prompt() let ticketPrice = Number(prompt("What's the ticket price in your city?"))
 if (passengerAge >= 18 && passengerAge < 65){
-	console.log(`Your ticket price is ${ticketPrice} euros.`)
+	console.log(`Your ticket price is ${ticketPrice} euros.`);
 }
 else if (passengerAge > 0 && passengerAge <= 2){
-	console.log(`Your ticket price is ${ticketPrice - (ticketPrice * 0.1)} euros.`)
+	console.log(`Your ticket price is ${ticketPrice - (ticketPrice * 0.1)} euros.`);
 }
 else if (passengerAge > 2 && passengerAge < 18){
-	console.log(`Your ticket price is ${ticketPrice - (ticketPrice * 0.5)} euros.`)
+	console.log(`Your ticket price is ${ticketPrice - (ticketPrice * 0.5)} euros.`);
 }
 else if (passengerAge >= 65){
-	console.log(`Your ticket price is ${ticketPrice - (ticketPrice * 0.6)} euros.`)
+	console.log(`Your ticket price is ${ticketPrice - (ticketPrice * 0.6)} euros.`);
 }
 else {
-	console.log(`Your ticket is priceless`)
+	console.log(`Your ticket is priceless`);
 }

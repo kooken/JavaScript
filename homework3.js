@@ -12,8 +12,8 @@ switch (operator){
 			console.log(number1 * number2);
 			break;
 		case '/' :
-				if (number1 == 0 || number2 == 0) console.log("We can't divide 0 or by 0")
-				else console.log(number1 / number2)
+				if (number1 == 0 || number2 == 0) console.log("We can't divide 0 or by 0");
+				else console.log(number1 / number2);
 			break;
 		case '+' :
 			console.log(number1 + number2);
@@ -26,7 +26,7 @@ switch (operator){
 	}
 }
 else{
-	console.log("Incorrect type!")
+	console.log("Incorrect type!");
 }
 
 /*
@@ -34,7 +34,7 @@ Task 2
 Use a for loop to print even numbers from 2 to 10
 */
 
-for (i = 2; i <= 10; i += 2){
+for (let i = 2; i <= 10; i += 2){
 	console.log('Current number is', i);
 }
 
@@ -49,12 +49,12 @@ equal.
 let countOpenBrackets = 0;
 let countCloseBrackets = 0;
 let testArray = [ '(', ')', '(', ')', ')'];
-for (i = 0; i < testArray.length; i++){
+for (let i = 0; i < testArray.length; i++){
 	if (testArray[i] == '(') countOpenBrackets++;
 	else if (testArray[i] == ')') countCloseBrackets++;
 }
-if (countOpenBrackets == countCloseBrackets) console.log("The number of brackets is equal! Yay!")
-else if (countOpenBrackets != countCloseBrackets) console.log("The number of brackets is not equal! Meh.")
+if (countOpenBrackets == countCloseBrackets) console.log("The number of brackets is equal! Yay!");
+else if (countOpenBrackets != countCloseBrackets) console.log("The number of brackets is not equal! Meh.");
 console.log(`The number of open brackets is ${countOpenBrackets}`);
 console.log(`The number of close brackets is ${countCloseBrackets}`);
 
@@ -68,7 +68,7 @@ We need to come up with a decoder program.
 
 let encrypted = "Ybrobrubr brabrrbrebr brtbrhbrebr brbbrebrsbrtbr brQbrAbr brebrvbrebrrbr";
 let decrypted = "";
-for (i = 0; i < encrypted.length; i += 3){
+for (let i = 0; i < encrypted.length; i += 3){
 	decrypted = decrypted + encrypted[i];
 }
 console.log(decrypted);

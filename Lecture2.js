@@ -7,31 +7,34 @@ console.log(`The 0 index of this phrase is "${firstPhrase[0]}"`);
 console.log(`The 6 index of this phrase is "${firstPhrase[6]}"`);
 console.log(`Modified phrase to lower case is "${firstPhrase.toLowerCase()}"`);
 console.log(`Modified phrase to upper case is "${firstPhrase.toUpperCase()}"`);
+console.log(String.fromCharCode(63)); // printing character from ASCII table by its' code
 
 // Math operators
 
 let a = 8;
 let b = 3;
 
-console.log(`a is number ${a}`)
-console.log(`b is number ${b}`)
+console.log(`a is number ${a}`);
+console.log(`b is number ${b}`);
 console.log(`Result of the addition a to b is ${a + b}`); // addition
 console.log(`Result of the substraction b from a is ${a - b}`); // substraction
 console.log(`Result of the a and b multiplication is ${a * b}`); // multiplication
 console.log(`Result of the a and b division is ${a / b}`); // division
+console.log(`Result of the a and b exponentiation is ${a ** b}`); // exponentiation
 console.log(`Remainder of the a and b division is ${a % b}`); // remainder of the division
 console.log(`Result of the a sign change is ${a *= -1}`); // change sign to negative
 console.log(`The result of subtracting 1 from the number b (now ${b}) with -- operator is ${-- b}`); // -- operator
 console.log(`The result of adding 1 to the number b (now ${b}) with ++ operator is ${++ b}`); // ++ operator
-console.log(`The result of dividing the number b (now ${b}) by 0 is ${b / 0}`) // division by 0
-console.log(`Type of the result of dividing the number by 0 is ${ typeof (b / 0)}`) // type of division by 0
-console.log(`isFinite method with division the number by 0 is ${ isFinite (b / 0)}`) // isFinite method
-console.log(`isFinite method with division the numbers by each other is ${ isFinite (a / b)}`) // isFinite method
+console.log(`The result of dividing the number b (now ${b}) by 0 is ${b / 0}`); // division by 0
+console.log(`Type of the result of dividing the number by 0 is ${ typeof (b / 0)}`); // type of division by 0
+console.log(`isFinite method with division the number by 0 is ${ isFinite (b / 0)}`); // isFinite method
+console.log(`isFinite method with division the numbers by each other is ${ isFinite (a / b)}`); // isFinite method
 
 // Comparison operators
 
 let c = 5;
-console.log(`c is number ${c}`)
+let bool;
+console.log(`c is number ${c}`);
 bool = (c == 5);
 console.log("Is c equal to 5? The answer is", bool); // using not strict operator '==' that compare only values
 bool = (c == '5');
@@ -54,8 +57,8 @@ console.log(`Is ${f} equal to "c"? The answer is ${f === "c"}`); // using strict
 
 let h = 3;
 let k = 7;
-console.log(`h is number ${h}`)
-console.log(`k is number ${k}`)
+console.log(`h is number ${h}`);
+console.log(`k is number ${k}`);
 console.log(`Is h greater than 0? The answer is ${h > 0}`); // using > operator
 console.log(`Is h less than k? The answer is ${h < k}`); // using < operator
 console.log(`Is h greater than 0 or equal to 0? The answer is ${h >= 0}`); // using >= operator
@@ -109,13 +112,13 @@ console.log(`The type of ${newNull} is ${typeof newNull}`); // null is an object
 let herHeight = 168;
 let hisHeight = 168;
 if (herHeight < hisHeight){ // condition is in parenthesis if (condition){what to do if our condition is true}
-	console.log("He is higher than her")
+	console.log("He is higher than her");
 }
 else if (herHeight == hisHeight){ // if have one more condition: else if (another condition){what to do if our condition is true}
-	console.log("Their height is equal")
+	console.log("Their height is equal");
 }
 else { // else {what to do if our condition is false}
-	console.log("She is higher than him")
+	console.log("She is higher than him");
 }
 
 // prompt() method

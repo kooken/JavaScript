@@ -11,12 +11,12 @@ let str = 'go';
 switch (day){ // expression in parenthesis (expression)
 	case '3' : // what if our expression is '3'
 		console.log("Tuesday");
-		console.log("Ok")
-			if (str == 'go') console.log("let's GOO") // if both expressions are in this case
+		console.log("Ok");
+			if (str == 'go') console.log("let's GOO"); // if both expressions are in this case
 		break; // we found the case for our expression and can quit
 	case 3 : // what if our expression is 3
 		console.log("Wednesday");
-		console.log("Ok")
+		console.log("Ok");
 		break; // we found the case for our expression and can quit
 	case '4' : // what if our expression is 'Hi'
 		console.log("Thursday");
@@ -34,11 +34,11 @@ const myArr = []; // declaring the array[], can use 'let' as well
 const arr = new Array(); // declaring the array using class Array()
 console.log(myArr); // [empty array]
 console.log(arr); // [empty array]
-const arr1 = ['a', 'b', 'c'] // adding the elements separated by comma (,)
+const arr1 = ['a', 'b', 'c']; // adding the elements separated by comma (,)
 console.log(arr1);
-const arr2 = ['a', 1, 'c'] // can add both strings and nums in 1 array
+const arr2 = ['a', 1, 'c']; // can add both strings and nums in 1 array
 console.log(arr2);
-let arr3 = [null, 'One', false, undefined, [5, 4, 8], arr1] // can add almost everythng, even another arrays
+let arr3 = [null, 'One', false, undefined, [5, 4, 8], arr1]; // can add almost everythng, even another arrays
 console.log(arr3);
 arr3 = [1, 10]; // rewrite the array, but works only if we declare our array with 'let'
 console.log(arr3);
@@ -58,7 +58,7 @@ expression 2 - condition;
 expression 3 - step;
 */
 
-for (i = 1; i < 5; i++){ // we start from i = 1, and while our i is less than 5 we add +1 to the i
+for (let i = 1; i < 5; i++){ // we start from i = 1, and while our i is less than 5 we add +1 to the i
 	console.log('Current number is', i);
 }
 
@@ -66,13 +66,13 @@ console.log('Hello QA!');
 let text = "JAVASCRIPT";
 let newText = ''; // empty string
 //let count = 0; // declaring a counter if we want to skip certain amount of symbols in the text
-for (i = 0; i < text.length; i++){ // while i is less then length of the text, we add i (so we going symbol by symbol in text string)
+for (let i = 0; i < text.length; i++){ // while i is less then length of the text, we add i (so we going symbol by symbol in text string)
 	//if (count % 2 == 0){ // while our counter is divided by two without a remainder
 		newText = newText + text[i] + "br"; // we add a "br" after each symbol(i) in text string
 	//} enf of if
 	//count++; // adding ... to the counter, so we skip ... characters in the text
 }
-console.log(newText) // printing the newText
+console.log(newText); // printing the newText
 
 let arr4 = [1, 2, 3, 4, 5, 6];
 let newArr = [];
