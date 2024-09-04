@@ -1,5 +1,6 @@
 /*
-1.1 Write a program to approve a vacation depending on the month. If the month is “July”
+Task 1
+Write a program to approve a vacation depending on the month. If the month is “July”
 or “August”, the program should show - ‘approved’, if other months, then - “denied”.
 */
 let vacationMonth = "September";
@@ -11,7 +12,8 @@ else {
 }
 
 /*
-1.2 Write a simple calculator (*, /, +, -). Check your code for exception coverage for arithmetic
+Task 2
+Write a simple calculator (*, /, +, -). Check your code for exception coverage for arithmetic
 operations. You should have two variables for the original numbers and one for the operator.
 Depending on the operator, one or another arithmetic operation should occur and the result should be
 output to the console.
@@ -36,7 +38,8 @@ else {
 }
 
 /*
-1.3 Solve the problem using the topics covered (exclusively using the topics covered):
+Task 3
+Solve the problem using the topics covered (exclusively using the topics covered):
 "A snail crawls up a wall 5 meters high. Every day it crawls up 3 meters, and every night
 it slides down 2 meters. How many days will it take it to crawl to the top of the wall?"
 */
@@ -75,6 +78,7 @@ else if (totalDistance == wallHeight){
 totalDistance -= snailSlidesDown
 
 /*
+Task 4
 Write a program for a vending machine. The customer enters their name and age and gets a drink.
 If the customer is under 21, the line “Take a glass of juice” is displayed; if the customer is 21
 or older, the line “I can offer you a glass of wine” is displayed; if over 80, the line “Maybe some
@@ -111,7 +115,9 @@ else{
 }
 */
 
-/* Body Mass Index
+/*
+Task 5
+Body Mass Index
 • Underweight (Below 18.5) - displays the message “I didn’t eat enough porridge”
 • Healthy Weight (18.5 - 24.9) displays the message “Well done! Keep it up!”
 • Overweight (25.0 - 29.9) displays the message “It’s better to give the cake to your neighbor”
@@ -141,6 +147,7 @@ else {
 }
 
 /*
+Task 6
 Write a program to calculate the cost of tickets. For passengers over 18 years old - full price,
 for infants under 2 years old - 10% of the cost, for children from 2 to 18 years old - 50% of the cost,
 for pensioners over 65 years old - 60% of the cost.
