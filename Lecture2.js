@@ -23,33 +23,19 @@ console.log(firstPhrase.slice(0, 5)); // slices from firstPhrase[0] to 5th symbo
 console.log(firstPhrase.slice(3));// slices from firstPhrase[3] to the end
 // slice and trim string
 console.log(textToTrim.slice(16).trim());
+// variable.replace(what we want to replace, what should be instead)
+console.log(firstPhrase.replace('world', 'Planet'));
+// 'string'.replace(what we want to replace, what should be instead)
+console.log('google'.replace('go', 'mo'));
+// variable.repeat(number of repeats) - how many times we want our string to be repeated
+console.log(firstPhrase.repeat(2));
+// 'string'.repeat(number of repeats) - how many times we want our string to be repeated
+console.log("haha".repeat(2));
 
-
-// Math operators
-
-let a = 8;
-let b = 3;
-
-console.log(`a is number ${a}`);
-console.log(`b is number ${b}`);
-console.log(`Result of the addition a to b is ${a + b}`); // addition
-console.log(`Result of the substraction b from a is ${a - b}`); // substraction
-console.log(`Result of the a and b multiplication is ${a * b}`); // multiplication
-console.log(`Result of the a and b division is ${a / b}`); // division
-console.log(`Result of the a and b exponentiation is ${a ** b}`); // exponentiation
-console.log(`Remainder of the a and b division is ${a % b}`); // remainder of the division
-console.log(`Result of the a sign change is ${a *= -1}`); // change sign to negative
-console.log(`The result of subtracting 1 from the number b (now ${b}) with -- operator is ${-- b}`); // -- operator
-console.log(`The result of adding 1 to the number b (now ${b}) with ++ operator is ${++ b}`); // ++ operator
-console.log(`The result of dividing the number b (now ${b}) by 0 is ${b / 0}`); // division by 0
-console.log(`Type of the result of dividing the number by 0 is ${ typeof (b / 0)}`); // type of division by 0
-console.log(`isFinite method with division the number by 0 is ${ isFinite (b / 0)}`); // isFinite method
-console.log(`isFinite method with division the numbers by each other is ${ isFinite (a / b)}`); // isFinite method
-console.log(`Math.abs(integer) function returns absolute value of an integer. Absolute value of -3 is ${Math.abs(-3)}`); // return absolute value of an integer
-console.log(`Math.pow(base, exponent) function raises a number to a power. The number 2 to the power of 3 will be ${Math.pow(2, 3)}`); // raises a number to a power
-console.log(`Math.ceil(integer) function rounds up and returns the smallest integer greater than or equal to a given number. The result of 923.2238 round up will be ${Math.ceil(923.2238)}`); // rounds up integers
+// Math operators - now in a separate file called mathOperators.js
 
 // Comparison operators
+// ==, ===, !=, !==, >, <, >=, <=
 
 let c = 5;
 let bool;
@@ -67,6 +53,7 @@ let d = "5";
 let e = -10;
 let f = "c";
 let g = "C";
+
 console.log(`Is ${d} equal to 5? The answer is ${d == 5}`); // using not strict operator
 console.log(`Is ${d} equal to 5? The answer is ${d === 5}`); // using strict operator
 console.log(`Is ${e} NOT equal to "-10"? The answer is ${e != "-10"}`); // using not strict operator
@@ -76,6 +63,7 @@ console.log(`Is ${f} equal to "c"? The answer is ${f === "c"}`); // using strict
 
 let h = 3;
 let k = 7;
+
 console.log(`h is number ${h}`);
 console.log(`k is number ${k}`);
 console.log(`Is h greater than 0? The answer is ${h > 0}`); // using > operator
@@ -88,18 +76,27 @@ console.log(`Is k less than 0 or equal to 0? The answer is ${k <= 0}`); // using
 // The priority of && operator is HIGHER than ||, so && executes earlier
 
 let bodyMass = 70;
+
 console.log(`The body mass is ${bodyMass} kg`);
 console.log(`Is body mass more than 50 OR less than 90 kg? The answer is ${bodyMass > 50 || bodyMass < 90}`);
 console.log(`Is body mass more than 10 AND less than 50 kg? The answer is ${bodyMass > 10 && bodyMass < 50}`);
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
 
-// Changing data types
-// From string to number using +str OR Number(str)
-// From number to string using String(num)
+// truth tables
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
 
+/* Changing data types
+- From string to number using +str OR Number(str);
+- From number to string using String(num);
+*/
+
+// Converting string to number
 let newString = "345";
 
 console.log(`The type of ${newString} is ${typeof newString}`);
@@ -113,6 +110,7 @@ let stringToNumber = Number(newString);
 
 console.log(`The type of ${stringToNumber} is ${typeof (stringToNumber)}`);
 
+// Converting number to string
 let newNumber = 237;
 
 console.log(`The type of ${newNumber} is ${typeof newNumber}`);
