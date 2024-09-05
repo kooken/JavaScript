@@ -39,4 +39,3 @@ console.log(typeof str);
 console.log(typeof b);
 console.log(typeof y);
 console.log(typeof x);
-
