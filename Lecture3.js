@@ -8,6 +8,7 @@
 
 let day = '3';
 let str = 'go';
+
 switch (day){ // expression in parenthesis (expression)
 	case '3' : // what if our expression is '3'
 		console.log("Tuesday");
@@ -32,15 +33,24 @@ switch (day){ // expression in parenthesis (expression)
 
 const myArr = []; // declaring the array[], can use 'let' as well
 const arr = new Array(); // declaring the array using class Array()
+
 console.log(myArr); // [empty array]
 console.log(arr); // [empty array]
-const arr1 = ['a', 'b', 'c']; // adding the elements separated by comma (,)
+
+const arr1 = ['a', 'b', 'c'];
+ // adding the elements separated by comma (,)
 console.log(arr1);
+
 const arr2 = ['a', 1, 'c']; // can add both strings and nums in 1 array
+
 console.log(arr2);
+
 let arr3 = [null, 'One', false, undefined, [5, 4, 8], arr1]; // can add almost everythng, even another arrays
+
 console.log(arr3);
+
 arr3 = [1, 10]; // rewrite the array, but works only if we declare our array with 'let'
+
 console.log(arr3);
 console.log(arr1[0]); // printing the element at the index[], starting with 0 only!
 console.log(arr1.length); // printing the length of the array (number of elements inside the array)
@@ -63,6 +73,7 @@ for (let i = 1; i < 5; i++){ // we start from i = 1, and while our i is less tha
 }
 
 console.log('Hello QA!');
+
 let text = "JAVASCRIPT";
 let newText = ''; // empty string
 //let count = 0; // declaring a counter if we want to skip certain amount of symbols in the text
@@ -76,6 +87,7 @@ console.log(newText); // printing the newText
 
 let arr4 = [1, 2, 3, 4, 5, 6];
 let newArr = [];
+
 for (let i = 0; i < arr4.length; i++){
 	newArr = newArr + arr4[i]; // adding symbol by symbol from old array into a new array
 }
