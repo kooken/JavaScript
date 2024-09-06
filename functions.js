@@ -67,7 +67,7 @@ console.log(average(1, 2));
 const truncate = (text, length) => {
 	const result = `${text.slice(0, length)}...`;
 	return result;
-  };
+};
 
 console.log(truncate(testString, 9));
 
@@ -75,7 +75,7 @@ console.log(truncate(testString, 9));
 // by default our base is 2
 const pow = (x, base = 2) => {
 	return x ** base;
-  };
+};
 
 console.log(pow(3)); // will be 9, because we didn't pass the base value and by default it's 2.
 console.log(pow(3, 3)); // will be 27, because we pass the base value '3' and it replaces the default value.
@@ -154,7 +154,7 @@ console.log(isMister('Mister'));
 const isInternationalPhone1 = (string) => {
 	const firstSymbol = string[0];
 	return firstSymbol === "+";
-  }
+}
 
 // One-line version
 const isInternationalPhone2 = (phone) => phone[0] === '+';
@@ -170,7 +170,7 @@ console.log(isInternationalPhone2('89602223423'));
 const isStrongPassword = (password) => {
 	const length = password.length;
 	return length > 8 && length < 20;
-  };
+};
 
 console.log(isStrongPassword('qwerty'));
 console.log(isStrongPassword('qwerty1234'));
@@ -240,3 +240,133 @@ const getLetter = (text, position) => text[position - 1] || '';
 
 console.log(getLetter('Library', 4));
 console.log(getLetter('Library', 15));
+
+// Functions with IF condition
+
+// Guessing if our number is 42 or not
+const guessNumber = (number) => {
+	if (number === 42){
+		return "You win!";
+	}
+	return "Try again!"
+}
+
+console.log(guessNumber(42));
+console.log(guessNumber(23));
+
+// Checking sentence type
+const getTypeOfSentence = (sentence) => {
+	let sentenceType; // declaring a variable to store answer
+	if (sentence.endsWith('?')) {
+	  sentenceType = 'Question'; // will return 'Question' if true and store it in the variable
+	} else {
+	  sentenceType = 'General'; // will return 'General' if false and store it in the variable
+	}
+
+	return `${sentenceType} sentence`;
+};
+
+console.log(getTypeOfSentence('Hodor'));
+console.log(getTypeOfSentence('Hodor?'));
+
+// Normalizing websites' url
+const normalizeUrl = (url) => {
+	if (url.startsWith('https://')){
+		return `${url}`;
+	}
+	else {
+		return `https://${url}`;
+	}
+}
+
+console.log(normalizeUrl("google.com"))
+console.log(normalizeUrl("https://ai.fi"));
+
+// Checking allies of the house Targaryen
+const whoIsThisHouseToTargaryens = (house) => {
+	if (house === 'Stark' || house === 'Velaryon'){
+		return 'ally';
+	}
+	else if (house === 'Hightower' || house === 'Lannister'){
+		return 'enemy';
+	}
+	else {
+		return 'neutral';
+	}
+}
+
+console.log(whoIsThisHouseToTargaryens("Velaryon"))
+console.log(whoIsThisHouseToTargaryens("Strong"));
+
+/*
+Ternary operators
+expression ? returns this if true : returns this if false
+__ ? __ : ___
+*/
+
+// Long version
+const abs1 = (number) => {
+	return number >= 0 ? number : -number;
+};
+
+console.log(abs1(10)); // will return 10 because 10 is more than 0
+console.log(abs1(-10)); // will return 10 because -10 is less than 0 (--10 = 10)
+
+// One-line version
+const abs2 = (number) => (number >= 0 ? number : -number);
+
+console.log(abs2(10)); // will return 10 because 10 is more than 0
+console.log(abs2(-10)); // will return 10 because -10 is less than 0 (--10 = 10)
+
+// converting text
+
+// using ordinary logical operators
+const convertText1 = (string) => {
+	if (string === ''){
+		return '';
+	}
+	else if ((string[0] !== string[0].toUpperCase())){
+		return `${reverse(string)}`;
+	}
+	else if (string[0] === string[0].toUpperCase()){
+		return `${string}`;
+	}
+}
+
+console.log(convertText1(''));
+
+// using ternary operators
+const convertText2 = (string) => {
+	if (string === '') {
+	  return '';
+	}
+
+	const reversable = string[0] !== string[0].toUpperCase();
+	return reversable ? reverse(string) : string;
+};
+
+console.log(convertText2(''));
+
+// WHILE loops
+
+const printNumbers = (lastNumber) => {
+	let i = 1; // cycle counter, starts with 1
+	while (i <= lastNumber) { // while our counter is less or equal to lastNumber - loop is working
+	  console.log(i); // we write i in each loop iteration
+	  i = i + 1; // and add +1 to i to increase the counter or we can write just i++ or i += 1;
+	}
+	console.log('finished!'); // the loop is over (i reaches our lastNumber)
+};
+
+printNumbers(3);
+
+const printReverseNumbers = (lastNumber) => {
+	let i = lastNumber; // cycle counter, starts with last number (to start a descending order)
+	while (i >= 1) { // while our counter is more or equal to 1 (last number to show) - loop is working
+	  console.log(i); // we write i in each loop iteration
+	  i--; // and subctract 1 from i to decrease the counter;
+	}
+	console.log('finished!'); // the loop is over (i reaches 1)
+};
+
+printReverseNumbers(5);

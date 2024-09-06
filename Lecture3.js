@@ -19,7 +19,7 @@ switch (day){ // expression in parenthesis (expression)
 		console.log("Wednesday");
 		console.log("Ok");
 		break; // we found the case for our expression and can quit
-	case '4' : // what if our expression is 'Hi'
+	case '4' : // what if our expression is '4'
 		console.log("Thursday");
 		break; // we found the case for our expression and can quit
 	case 5 : // what if our expression is 5
@@ -28,6 +28,28 @@ switch (day){ // expression in parenthesis (expression)
 	default: // what if our expression is something else
 		console.log("Another day"); // we found nothing and can quit WITHOUT break
 }
+
+/*
+or we can do switch shorter and more simple inside the function
+no need to use break every time, just use return instead!
+*/
+
+const daySwitch = (day) => {
+switch (day){ // function argument in parenthesis (argument)
+	case '3' : // what if our expression is '3'
+		return "Tuesday";
+	case 3 : // what if our expression is 3
+		return "Wednesday";
+	case '4' : // what if our expression is '4'
+		return "Thursday";
+	case 5 : // what if our expression is 5
+		return "Friday";
+	default: // what if our expression is something else
+		return "Another day"; // we found nothing and can quit WITHOUT break
+	}
+}
+
+console.log(daySwitch(5));
 
 // ARRAYS
 

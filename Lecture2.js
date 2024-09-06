@@ -31,6 +31,11 @@ console.log('google'.replace('go', 'mo'));
 console.log(firstPhrase.repeat(2));
 // 'string'.repeat(number of repeats) - how many times we want our string to be repeated
 console.log("haha".repeat(2));
+// 'string'.startswith() checking if our string starts with specific symbol - returns true
+console.log("haha!".startsWith('h'));
+// 'string'.endswith() checking if our string ends with specific symbol - returns true
+console.log("haha!".endsWith('!'));
+
 
 // Math operators - now in a separate file called mathOperators.js
 
