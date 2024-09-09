@@ -35,6 +35,9 @@ if (a % 2 == 0){
 else if (a % 2 == 1){
 	console.log(`The number ${a} is even`);
 }
+
+const evenOrOdd = (number) => (number % 2 === 0 ? 'Even' : 'Odd'); // function with ternary operator;
+
 // change sign to negative
 console.log(`Result of the a sign change is ${a *= -1}`);
 // -- operator - just substracting 1 from integer

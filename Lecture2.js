@@ -122,9 +122,11 @@ console.log(`The type of ${newNumber} is ${typeof newNumber}`);
 console.log(`Changing the type of ${newNumber} ${typeof newNumber} to ${typeof (String(newNumber))} ${newNumber}`); // changing number to string using String() method
 console.log(`The type of ${newNumber} is ${typeof newNumber}`); // checking that our number is still number because we haven't convert it yet
 // to convert our variable into a new data type we should declare new variable, for example:
-let numberToString = String(newNumber);
+let numberToString1 = String(newNumber);
 
-console.log(`The type of ${numberToString} is ${typeof (numberToString)}`);
+const numberToString2 = (number) => String(number); // or do this with just a function;
+
+console.log(`The type of ${numberToString1} is ${typeof (numberToString1)}`);
 
 // Another data types
 
