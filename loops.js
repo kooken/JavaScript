@@ -235,3 +235,74 @@ do {
 	console.log(fruits[countFruits]);
 	countFruits++;
 } while (countFruits < fruits.length); // condition for do;
+
+// BREAK & CONTINUE
+/*
+BREAK - ending loop;
+CONTINUE - interrupts current loop and continues loop from the next iteration;
+
+Can't use break and continue with ternary operators:
+expression ? returns this if true : returns this if false
+__ ? __ : ___
+*/
+
+// for of
+const cars = ['BMW', 'Volvo', 'Lexus'];
+for (let el of cars){ // going through each element (el - temporary variable) of the array;
+	console.log(el);
+}
+
+// for in
+for (let index in cars){ // going through each index of the array;
+	console.log(index); // print index;
+	console.log(cars[index]); // print index value;
+}
+
+// INNER FOR LOOPS
+
+// 1        // line == 1
+// 12       // line == 2
+// 123      // line == 3
+// 1234     // line == 4
+// 12345    // line == 5
+
+for (let line = 1; line <= 5; line ++) { // for for lines
+    let str = "";
+  for (let numInLine = 1; numInLine <= line ; numInLine++) { // for for numbers in line
+    str += numInLine;
+  }
+    console.log(str);
+}
+
+// the same but in reversed order:
+for (let i = 5; i >= 1; i--) {
+  let str = "";
+  for (let j = i; j >= 1; j--) {
+    str += j;
+  }
+  console.log(str);
+}
+
+// arrays in arrays
+let arr = [1, ["a", 'b', [5, 4]], 3, "Herro ok"]
+//         0   ________________   2     3
+//                     1
+// arr[1] == ["a", 'b', [5, 4]];
+// arr [1][1] == 'b';
+// arr [1][2] == [5, 4];
+// arr [1][2][1] == 4;
+// everything inside array in array is object;
+
+console.log(arr[0] + ' ' + typeof arr[0])
+console.log(arr[1] + ' ' + typeof arr[1])
+console.log(arr[1][1] + ' ' + typeof arr[1])
+console.log(arr[1][2][1] + ' ' + typeof arr[1])
+console.log(arr[2] + ' ' + typeof arr[2])
+console.log(arr[3] + ' ' + typeof arr[3])
+
+arr[1][1] = 'R' // replacing the element at [1][1] array address;
+console.log(arr[1][1])
+arr.push('baby'); // adding a new element to the end of the array;
+console.log(arr);
+arr.pop(); // deleting the last element in the array;
+console.log(arr);

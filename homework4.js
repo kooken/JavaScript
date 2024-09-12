@@ -21,6 +21,45 @@ Draw a rhombus:
         121
 */
 
+let size = 10;
+
+// Upper part
+for (let i = 1; i <= size; i++) {
+    let row = '';
+    // initial spaces
+    for (let j = 1; j <= size - i; j++) {
+        row += ' ';
+    }
+    // numbers in ascending order
+    for (let j = 1; j <= i; j++) {
+        row += j;
+    }
+    // numbers in descending order
+    for (let j = i - 1; j >= 1; j--) {
+        row += j;
+    }
+    console.log(row);
+}
+
+// Lower part
+for (let i = size - 1; i >= 1; i--) {
+    let row = '';
+    // initial spaces
+    for (let j = 1; j <= size - i; j++) {
+        row += ' ';
+    }
+    // numbers in ascending order
+    for (let j = 1; j <= i; j++) {
+        row += j;
+    }
+    // numbers in descending order
+    for (let j = i - 1; j >= 1; j--) {
+        row += j;
+    }
+    console.log(row);
+}
+
+
 /*
 Task 2
 Draw a Christmas Tree:
@@ -31,6 +70,19 @@ Draw a Christmas Tree:
 *********
 */
 
+for (let i = 1; i <= 5; i++) {
+    let row = '';
+    // initial spaces;
+    for (let j = 1; j <= 5 - i; j++) {
+        row += ' ';
+    }
+    // adding asterisks;
+    for (let j = 1; j <= 2 * i - 1; j++) {
+        row += '*';
+    }
+    console.log(row);
+}
+
 /*
 Task 3
 Draw a triangle:
@@ -40,6 +92,21 @@ Draw a triangle:
 4 8 11 13
 5 9 12 14 15
 */
+
+let num = 1;
+
+for (let i = 1; i <= 5; i++) {
+    let row = '';
+    let temp = num;
+
+    for (let j = 1; j <= i; j++) {
+        row += temp + ' ';
+        temp += (5 - j);
+    }
+
+    console.log(row.trim());
+    num++;
+}
 
 /*
 Task 4
@@ -56,11 +123,14 @@ Example:
 */
 
 
+
 /*
 Task 5
 Print lines containing both letters ‘a’ and ‘o’. Words should not be repeated.
 let vegetables1 = [‘Cabbage‘, ‘Turnip‘, ‘Radish‘, ‘Carrot’, ‘Onion‘, ‘Potato‘];
 */
+
+
 
 /*
 Task 6
@@ -71,8 +141,12 @@ Task 6
 let arr1 = [‘mama’, 1000, ‘Sunday’, 3, ‘my’,true,‘limit’, null,15, ‘elite’, undefined, 100, ‘destruction’, 313,‘abc’, 425, ‘apples’];
 */
 
+
+
 /*
 Task 7
 Find the sum of all numbers:
 let numbers = [ 3, 5, 25, 70, 171,200,326, 345, 999, 1000, 1005];
 */
+
+
