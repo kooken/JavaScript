@@ -146,7 +146,7 @@ let arr1 = [‘mama’, 1000, ‘Sunday’, 3, ‘my’,true,‘limit’, null,1
 /*
 Task 7
 Find the sum of all numbers:
-let numbers = [ 3, 5, 25, 70, 171,200,326, 345, 999, 1000, 1005];
+let numbers = [3, 5, 25, 70, 171,200,326, 345, 999, 1000, 1005];
 */
 
 

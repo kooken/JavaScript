@@ -3,7 +3,9 @@ Task 1
 Write a program to approve a vacation depending on the month. If the month is “July”
 or “August”, the program should show - ‘approved’, if other months, then - “denied”.
 */
+
 let vacationMonth = "September";
+
 if (vacationMonth == "July" ||vacationMonth == "August"){
 	console.log("approved");
 }
@@ -18,9 +20,11 @@ operations. You should have two variables for the original numbers and one for t
 Depending on the operator, one or another arithmetic operation should occur and the result should be
 output to the console.
 */
+
 let number1 = 23;
 let number2 = 4;
 let operator = "%";
+
 if (operator == "/"){
 	console.log(number1 / number2);
 }
@@ -49,6 +53,7 @@ let snailCrawlsUp = 3;
 let snailSlidesDown = 2;
 let totalDistance = 0;
 let answer = 0;
+
 if ((totalDistance += snailCrawlsUp) < wallHeight){
 	console.log(`Day ${++answer}, your distance is ${totalDistance} m now`);
 	console.log("Go forward!");

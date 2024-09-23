@@ -76,6 +76,7 @@ console.log(decrypted);
 // Tasks from CodeWars
 
 // Implement a function called multiply, which takes two numbers and returns their product
+
 const multiply = (number1, number2) => {
 	return number1 * number2;
 };
@@ -99,7 +100,6 @@ In this Kata you should fix/create a program that returns the following values:
 You may assume the following:
 - If a and b are both numbers, neither of a or b will be 0.
 */
-
 
 const myFirstKata = (a, b) => {
 	if (typeof(a) !== 'number' || typeof(b) !== 'number') {

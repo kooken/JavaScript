@@ -10,11 +10,15 @@ The result should be two lines on the screen:
 John Adams
 Anna Karenina
 */
+
 let firstName = "John";
 let lastName = "Adams";
+
 console.log(firstName, lastName);
+
 firstName = "Anna";
 lastName = "Karenina";
+
 console.log(firstName, lastName);
 
 /*
@@ -27,15 +31,20 @@ let b = true,
 let y = 9 + ‘1’ ,
 let x = 'a' / 6
 */
+
 let a;
-let c = 9;
+let c = 9007199254740992;
 let str = "Hi 5!";
 let b = true;
 let y = 9 + '1';
 let x = 'a' / 6;
+
 console.log(typeof a);
 console.log(typeof c);
 console.log(typeof str);
 console.log(typeof b);
 console.log(typeof y);
 console.log(typeof x);
+
+const maxInt = Number.MAX_SAFE_INTEGER
+console.log(maxInt)
