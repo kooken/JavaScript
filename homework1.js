@@ -1,6 +1,6 @@
 /*
 Task 1
-1.1 Declare two variables: firstName и lastName.
+1.1 Declare two variables: firstName and lastName.
 1.2 Assign the value “John” to the variable firstName and the value “Adams” to the variable lastName.
 1.3 Print the value of firstName and lastName to the console
 (it should show John Adams).

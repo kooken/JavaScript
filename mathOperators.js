@@ -26,14 +26,14 @@ console.log(`The number 2 to the power of 3 will be ${Math.pow(a, b)}`);
 console.log(`Remainder of the a and b division is ${a % b}`);
 /*
 check if the number is odd or even using the remainder of the division:
-- number % 2 == 0 - the number is odd;
-- number % 2 == 1 - the number is even.
+- number % 2 == 0 - the number is even;
+- number % 2 == 1 - the number is odd.
 */
 if (a % 2 == 0){
-	console.log(`The number ${a} is odd`);
+	console.log(`The number ${a} is even`);
 }
 else if (a % 2 == 1){
-	console.log(`The number ${a} is even`);
+	console.log(`The number ${a} is odd`);
 }
 
 const evenOrOdd = (number) => (number % 2 === 0 ? 'Even' : 'Odd'); // function with ternary operator;

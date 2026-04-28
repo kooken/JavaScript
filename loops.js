@@ -47,18 +47,18 @@ console.log(sumNumbersFromRange(1, 5)); // so 1 + 2 + 3 + 4 + 5 = 15 (1 is the 1
 
 // Multiplying all numbers within range (first number of the range - start, last number - finish)
 const multiplyNumbersFromRange = (start, finish) => {
-	let i = start; // i is the first number to sum
-	let sum = 1;
+	let i = start;
+	let product = 1;
 
 	while (i <= finish) { // while i is less or equal to the last number
-	  sum = sum * i; // adding this number to the sum or sum += i;
+	  product = product * i; // multiplying into the product or product *= i;
 	  i = i + 1; // next number in the range or i++;
 	}
 
-	return sum;
+	return product;
 }
 
-console.log(sumNumbersFromRange(1, 3)); // so 1 * 2 * 3  = 6 (1 is the 1st number, 3 - last);
+console.log(multiplyNumbersFromRange(1, 3)); // so 1 * 2 * 3  = 6 (1 is the 1st number, 3 - last);
 
 // Repeating string exact number of times
 const repeat = (string, times) => {
